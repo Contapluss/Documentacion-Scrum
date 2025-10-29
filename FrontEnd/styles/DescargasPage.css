@@ -1,0 +1,23 @@
+/* src/styles/DescargasPage.css */
+
+.filter-section {
+    background-color: var(--color-fondo, #f8f9fa);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #dee2e6;
+}
+
+/* --- ADD THIS EXACT RULE TO DescargasPage.css --- */
+
+form.filter-section div input[type="date"].form-control {
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+    -moz-appearance: auto !important;
+}
+
+/* Optional: Styles for the calendar icon if needed */
+form.filter-section div input[type="date"].form-control::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+}
