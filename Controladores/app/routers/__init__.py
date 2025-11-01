@@ -1,0 +1,29 @@
+#from . import afps, bosses, locations, positions, register_company, workers
+from .auth import register, verify_email ,login, refresh
+from . import epp, odi
+from . import register_company
+from . import workers
+from . import nacionalidad
+from . import contrato
+from . import clausulas
+
+routers = [
+    #afps.router,
+    #bosses.router,
+    #locations.router,
+    #positions.router,
+    #register_company.router,
+    #workers.router,
+    #login.router,
+    register.router,
+    verify_email.router,
+    refresh.router,
+    login.router,
+    epp.router,
+    odi.router,
+    register_company.router,
+    workers.router,
+    nacionalidad.router,
+    contrato.router,
+    clausulas.router
+]
