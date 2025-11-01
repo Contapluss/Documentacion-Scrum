@@ -1,0 +1,8 @@
+/* src/styles/EppPage.css */
+
+.search-section {
+    background-color: #f8f9fa; /* --color-fondo o similar */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
