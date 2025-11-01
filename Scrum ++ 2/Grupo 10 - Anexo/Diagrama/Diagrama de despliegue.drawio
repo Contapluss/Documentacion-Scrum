@@ -1,0 +1,60 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" scale="1" border="0" version="28.2.8">
+  <diagram name="PÃÂ¡gina-1" id="O586yAj8llBkiJVdreLi">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="40aMClPwMwkRp1wwSrnK-1" value="Servidor Web" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="314" y="170" width="200" height="960" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-2" value="&lt;div&gt;&lt;div&gt;- conectividad_de_red: boolean&lt;/div&gt;&lt;div&gt;- base_de_datos (PostgreSQL): activa&lt;/div&gt;&lt;div&gt;- orm (SQLAlchemy): habilitado&lt;/div&gt;&lt;div&gt;- validación_datos (Pydantic): habilitada&lt;/div&gt;&lt;div&gt;- autenticación (JWT): requerida&lt;/div&gt;&lt;div&gt;- servicio_correo (SendGrid o SMTP): activo&lt;/div&gt;&lt;div&gt;- generador_PDF (ReportLab): disponible&lt;/div&gt;&lt;div&gt;- entorno_virtual (Poetry): activo&lt;/div&gt;&lt;div&gt;- archivo_env: configurado&lt;/div&gt;&lt;div&gt;- acceso_a_sistema_de_archivos: permitido&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-1">
+          <mxGeometry y="26" width="200" height="244" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-1">
+          <mxGeometry y="270" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-4" value="&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ verify_email() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ register_user() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ refresh_access_token() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ login_user() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ login_page() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ login_html() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ logout() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ actualizar_empresa() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ obtener_empresa() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ search_trabajadores() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ search_trabajadores_by_rut() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ create_trabajador() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ create_clausula() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ list_clausulas() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ generate_contrato_pdf() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ generate_termino_contrato_pdf() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ list_epp() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ create_epp() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ generate_epp_pdf() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ create_odi() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ generate_odi_pdf() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ list_odi() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ delete_odi() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ list_nacionalidades() void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-1">
+          <mxGeometry y="278" width="200" height="682" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-10" value="PC usuario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="170" width="190" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-11" value="&lt;div&gt;&amp;lt;&amp;lt;Requerimiento&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;- conectividad de red: boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-10">
+          <mxGeometry y="26" width="190" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-10">
+          <mxGeometry y="80" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-19" value="json via https" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.374;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="40aMClPwMwkRp1wwSrnK-10" target="40aMClPwMwkRp1wwSrnK-2">
+          <mxGeometry x="0.0038" y="14" relative="1" as="geometry">
+            <mxPoint x="190" y="84" as="sourcePoint" />
+            <mxPoint x="250" y="83.5" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-13" value="&lt;div&gt;&amp;lt;&amp;lt;Ejecutable&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;+ Navegador(): void&lt;br&gt;+ IngresarDatosEmpresa(): void&lt;br&gt;+ EditarDatosEmpresa(): void&lt;br&gt;+ EliminarEmpresa(): void&lt;/div&gt;&lt;div&gt;+ IngresarDatosTrabajador(): void&lt;/div&gt;&lt;div&gt;+ ConfirmarCuenta(): void&lt;/div&gt;&lt;div&gt;+ EditarDatosTrabajador(): void&lt;/div&gt;&lt;div&gt;+ EliminarTrabajador(): void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-10">
+          <mxGeometry y="88" width="190" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-14" value="Base de datos" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="180" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-15" value="&lt;div&gt;&amp;lt;&amp;lt;Requerimiento&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;- conectividad de red: boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-14">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-14">
+          <mxGeometry y="100" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-17" value="&lt;div&gt;&amp;lt;&amp;lt;Ejecutable&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;+ PostgreSQLServer(): void&lt;/div&gt;&lt;div&gt;+ Consultas desde SQLalc&lt;/div&gt;&lt;div&gt;hemy(): void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40aMClPwMwkRp1wwSrnK-14">
+          <mxGeometry y="108" width="160" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="40aMClPwMwkRp1wwSrnK-21" value="&amp;nbsp;SQLalchemy ORM" style="endArrow=none;html=1;rounded=0;entryX=0.009;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.008;exitY=0.003;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="40aMClPwMwkRp1wwSrnK-17">
+          <mxGeometry x="-0.0602" y="20" relative="1" as="geometry">
+            <mxPoint x="513.9999999999999" y="289.9959999999999" as="sourcePoint" />
+            <mxPoint x="615.9999999999999" y="290.04800000000006" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
