@@ -1,0 +1,47 @@
+@startuml
+' ========================================
+' MÓDULO: INFORMACIÓN DE EMPRESA Y SOCIOS
+' ========================================
+
+actor Administrador
+
+usecase "CU08: Agregar socio" as CU08
+usecase "CU09: Editar datos de socio" as CU09
+usecase "CU10: Eliminar socio" as CU10
+usecase "CU11: Agregar método de pago a socio" as CU11
+usecase "CU12: Editar método de pago de socio" as CU12
+usecase "CU13: Eliminar método de pago de socio" as CU13
+usecase "CU14: Editar acciones y capital total" as CU14
+usecase "CU15: Editar direcciones de trabajo" as CU15
+usecase "CU16: Editar información de seguridad y previsión" as CU16
+usecase "CU17: Editar actividad económica y régimen tributario" as CU17
+usecase "CU18: Editar datos legales" as CU18
+usecase "CU19: Editar datos generales" as CU19
+
+usecase "CU02: Iniciar sesión" as CU02
+usecase "CU04: Validar correo de usuario" as CU04
+
+Administrador --> CU08
+Administrador --> CU09
+Administrador --> CU10
+Administrador --> CU11
+Administrador --> CU12
+Administrador --> CU13
+Administrador --> CU14
+Administrador --> CU15
+Administrador --> CU16
+Administrador --> CU17
+Administrador --> CU18
+Administrador --> CU19
+
+' Relaciones comunes
+CU08 .> CU02 : <<include>>
+CU08 .> CU04 : <<include>>
+CU09 .> CU02 : <<include>>
+CU09 .> CU04 : <<include>>
+CU10 .> CU02 : <<include>>
+
+note right of CU08
+  Requiere sesión activa y correo validado.
+end note
+@enduml

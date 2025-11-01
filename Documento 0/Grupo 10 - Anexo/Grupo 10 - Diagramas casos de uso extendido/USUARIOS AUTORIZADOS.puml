@@ -1,0 +1,32 @@
+@startuml
+' ========================================
+' MÓDULO: USUARIOS AUTORIZADOS
+' ========================================
+
+actor Administrador
+
+usecase "CU05: Crear cuenta de usuario autorizado" as CU05
+usecase "CU06: Editar datos de usuario autorizado" as CU06
+usecase "CU07: Eliminar usuario autorizado" as CU07
+usecase "CU04: Validar correo de usuario" as CU04
+usecase "CU02: Iniciar sesión" as CU02
+
+Administrador --> CU05
+Administrador --> CU06
+Administrador --> CU07
+
+' Reutiliza acciones comunes
+CU05 .> CU02 : <<include>> 
+CU05 .> CU04 : <<include>> 
+CU06 .> CU02 : <<include>> 
+CU07 .> CU02 : <<include>> 
+
+note right of CU05
+  Se valida sesión y correo antes de crear usuario autorizado.
+end note
+
+note right of CU06
+  Solo disponible para usuarios con rol Administrador.
+end note
+
+@enduml
